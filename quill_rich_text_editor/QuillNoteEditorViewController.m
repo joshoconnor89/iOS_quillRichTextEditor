@@ -250,10 +250,13 @@ static Class hackishFixClass = Nil;
     
     
     //Set up text in webView
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"html"];
-    NSString *htmlParam = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    htmlParam = [self removeQuotesFromHTML:htmlParam];
-    NSString *setEditorContentCommand = [NSString stringWithFormat:@"setEditorHTML(\"%@\")", htmlParam];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"html"];
+//    NSString *htmlParam = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+//    htmlParam = [self removeQuotesFromHTML:htmlParam];
+    //NSString *setEditorContentCommand = [NSString stringWithFormat:@"setEditorHTML(\"%@\")", htmlParam];
+    
+    
+    NSString *setEditorContentCommand = [NSString stringWithFormat:@"updateWebViewContents();"];
     
     [_webView stringByEvaluatingJavaScriptFromString:setEditorContentCommand];
 

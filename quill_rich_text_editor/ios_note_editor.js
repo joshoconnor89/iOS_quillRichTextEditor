@@ -106,6 +106,18 @@ function setEditorHTML(strHTML) {
     editor.setHTML(strHTML);
 };
 
+function updateWebViewContents() {
+    var contents = {
+        "ops": [
+            {
+                "insert": "Gandalf the Grey\n"
+            }
+        ]
+    }
+    editor.setContents(contents);
+}
+
+
 function onTextSelectedInRange(range,attributes){
 //    console.log('common attributes: ',attributes);
     if(attributes){
