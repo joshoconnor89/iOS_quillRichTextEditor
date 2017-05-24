@@ -66,8 +66,7 @@ extension ViewController: QuillNoteEditorDelegate {
     }
     
     func onWebViewLoaded() {
-        print("SUCCESS onWebViewLoaded")
-        noteEditorController?.setUpTextInWebView(QuillSamples.browserUnsupportedPage)
+        noteEditorController?.setUpTextInWebView(QuillSamples.viewTaskNewDesign)
     }
 
 }

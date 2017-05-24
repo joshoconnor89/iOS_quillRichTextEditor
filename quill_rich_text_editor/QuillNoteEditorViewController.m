@@ -255,14 +255,16 @@ static Class hackishFixClass = Nil;
     }
     
     
-    //Set up text in webView
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"html"];
-//    NSString *htmlParam = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-//    htmlParam = [self removeQuotesFromHTML:htmlParam];
-    //NSString *setEditorContentCommand = [NSString stringWithFormat:@"setEditorHTML(\"%@\")", htmlParam];
+    //Set max width!
+    CGSize contentSize = webView.scrollView.contentSize;
+    CGSize viewSize = self.view.bounds.size;
     
+    float sfactor = viewSize.width / contentSize.width;
     
-
+    webView.scrollView.minimumZoomScale = sfactor;
+    webView.scrollView.maximumZoomScale = sfactor;
+    webView.scrollView.zoomScale = sfactor;
+    
 
 }
 
