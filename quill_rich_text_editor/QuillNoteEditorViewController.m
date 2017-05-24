@@ -154,6 +154,12 @@ static Class hackishFixClass = Nil;
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setUpTextInWebView:(NSString *)deltaObject{
+    NSLog(@"setUpTextInWebView");
+    NSLog(@"DELTA OBJECT -> %@", deltaObject);
+    NSString *setEditorContentCommand = [NSString stringWithFormat:@"updateWebViewContents(%@);", deltaObject];
+    [_webView stringByEvaluatingJavaScriptFromString:setEditorContentCommand];
+}
 
 -(void)setLineAlignment:(NSString *)alignment{
     NSLog(@"setLineAlignment");
@@ -256,9 +262,7 @@ static Class hackishFixClass = Nil;
     //NSString *setEditorContentCommand = [NSString stringWithFormat:@"setEditorHTML(\"%@\")", htmlParam];
     
     
-    NSString *setEditorContentCommand = [NSString stringWithFormat:@"updateWebViewContents();"];
-    
-    [_webView stringByEvaluatingJavaScriptFromString:setEditorContentCommand];
+
 
 }
 
@@ -266,6 +270,7 @@ static Class hackishFixClass = Nil;
     NSLog(@"scrollViewDidScroll");
     [_webView.scrollView setContentOffset:CGPointMake(0, scrollView.contentOffset.y)];
 }
+
 
 /*
 #pragma mark - Navigation

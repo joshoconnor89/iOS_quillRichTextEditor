@@ -30,7 +30,7 @@
 -(void)setTextAlignment:(NSString *)alignment;
 -(void)setTextFormat:(NSString *)format andApply:(BOOL)apply;
 -(void)setLineFormat:(NSString *)format;
-
+-(void)setUpTextInWebView:(NSString *)deltaObject;
 -(void)focusEditor;
 
 -(void)setHTML:(NSString *)html;

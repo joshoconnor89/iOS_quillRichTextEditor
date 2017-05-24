@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         view.addSubview(containerView!)
         
         noteEditorController = QuillNoteEditorViewController(nibName: nil, bundle: nil)
+        noteEditorController?.delegate = self
         addChildViewController(noteEditorController!)
         containerView?.addSubview((noteEditorController?.view)!)
         noteEditorController?.view.frame = (containerView?.bounds)!
@@ -41,9 +42,18 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        noteEditorController?.setHTML(QuillSamples.browserUnsupportedPage)
+        //noteEditorController?.setUpTextInWebView(QuillSamples.browserUnsupportedPage)
     }
     
+    func clenseHTML(_ htmlParam_p: String) -> String {
+        var stringToReturn = htmlParam_p
+        stringToReturn = htmlParam_p.replacingOccurrences(of: "\"", with: "\\\"")
+        stringToReturn = htmlParam_p.replacingOccurrences(of: "\n", with: "\\n")
+        stringToReturn = htmlParam_p.replacingOccurrences(of: "\r", with: "")
+        stringToReturn = htmlParam_p.replacingOccurrences(of: "\'", with: "\\\'")
+        return stringToReturn
+    }
+
 
 }
 
@@ -56,7 +66,8 @@ extension ViewController: QuillNoteEditorDelegate {
     }
     
     func onWebViewLoaded() {
-        print("onWebViewLoaded")
+        print("SUCCESS onWebViewLoaded")
+        noteEditorController?.setUpTextInWebView(QuillSamples.browserUnsupportedPage)
     }
 
 }

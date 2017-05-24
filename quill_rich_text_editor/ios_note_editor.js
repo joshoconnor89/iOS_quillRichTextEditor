@@ -106,14 +106,16 @@ function setEditorHTML(strHTML) {
     editor.setHTML(strHTML);
 };
 
-function updateWebViewContents() {
-    var contents = {
-        "ops": [
-            {
-                "insert": "Gandalf the Grey\n"
-            }
-        ]
-    }
+function updateWebViewContents(contents) {
+    //Placeholder, uncomment and set contents
+    //to contentsToUpdate in editor.set... to see placeholder
+//    var contentsToUpdate = {
+//        "ops": [
+//            {
+//                "insert": "Gandalf the Grey\n"
+//            }
+//        ]
+//    }
     editor.setContents(contents);
 }
 
