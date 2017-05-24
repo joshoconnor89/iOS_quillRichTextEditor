@@ -102,6 +102,10 @@ function setTextFormat(format,value){
     }
 }
 
+function setEditorHTML(strHTML) {
+    editor.setHTML(strHTML);
+};
+
 function onTextSelectedInRange(range,attributes){
 //    console.log('common attributes: ',attributes);
     if(attributes){

@@ -30,11 +30,18 @@ class ViewController: UIViewController {
         quillToolbar?.editorViewController = noteEditorController
         view.addSubview(quillToolbar!)
 
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        noteEditorController?.setHTML(QuillSamples.browserUnsupportedPage)
     }
     
 

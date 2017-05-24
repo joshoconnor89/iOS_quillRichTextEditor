@@ -122,10 +122,12 @@ static Class hackishFixClass = Nil;
 }
 
 -(void)onViewWillTransitToSize:(CGSize)size{
+    NSLog(@"onViewWillTransitToSize");
     _webView.frame = CGRectMake(0, 0, size.width, size.height);
 }
 
 - (NSString *)removeQuotesFromHTML:(NSString *)html {
+    NSLog(@"removeQuotesFromHTML");
     html = [html stringByReplacingOccurrencesOfString:@"\"" withString:@"\\\""];
     html = [html stringByReplacingOccurrencesOfString:@"“" withString:@"&quot;"];
     html = [html stringByReplacingOccurrencesOfString:@"”" withString:@"&quot;"];
@@ -136,6 +138,7 @@ static Class hackishFixClass = Nil;
 
 
 - (NSString *)tidyHTML:(NSString *)html {
+    NSLog(@"tidyHTML");
     html = [html stringByReplacingOccurrencesOfString:@"<br>" withString:@"<br />"];
     html = [html stringByReplacingOccurrencesOfString:@"<hr>" withString:@"<hr />"];
     if (self.formatHTML) {
@@ -153,11 +156,13 @@ static Class hackishFixClass = Nil;
 
 
 -(void)setLineAlignment:(NSString *)alignment{
+    NSLog(@"setLineAlignment");
     NSString *lineAlignment = [NSString stringWithFormat:@"setLineAlignment('%@');",alignment];
     [_webView stringByEvaluatingJavaScriptFromString:lineAlignment];
 }
 
 -(void)setTextFormat:(NSString *)format andApply:(BOOL)apply{
+    NSLog(@"setTextFormat");
     NSString *textFormat;
     if(apply){
         textFormat = [NSString stringWithFormat:@"setTextFormat('%@',true);",format];
@@ -168,38 +173,46 @@ static Class hackishFixClass = Nil;
 }
 
 -(void)setTextAlignment:(NSString *)alignment{
+    NSLog(@"setTextAlignment");
     NSString *textAlignment = [NSString stringWithFormat:@"setTextAlignment('%@');",alignment];
     [_webView stringByEvaluatingJavaScriptFromString:textAlignment];
 }
 
 -(void)setLineFormat:(NSString *)format{
+    NSLog(@"setLineFormat");
     NSString *lineFormat = [NSString stringWithFormat:@"setLineFormat('%@',true);",format];
     [_webView stringByEvaluatingJavaScriptFromString:lineFormat];
 }
 
 
 -(void)focusEditor{
+    NSLog(@"focusEditor");
     NSString *focusString = [NSString stringWithFormat:@"editor.focus()"];
     [_webView stringByEvaluatingJavaScriptFromString:focusString];
 }
 
 -(void)setHTML:(NSString *)html{
+    NSLog(@"setHTML");
     html = [self removeQuotesFromHTML:html];
     NSString *htmlSetter = [NSString stringWithFormat:@"setHTML(\"%@\")",html];
     [_webView stringByEvaluatingJavaScriptFromString:htmlSetter];
 }
 
 -(NSString *)getHTML{
+    NSLog(@"getHTML");
     NSString *htmlGetter = [NSString stringWithFormat:@"getHTML();"];
     return [_webView stringByEvaluatingJavaScriptFromString:htmlGetter];
 }
 
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-   ///NSLog(@"Error: %@",error);
+    NSLog(@"didFailLoadWithError");
+    NSLog(@"Error: %@",error);
 }
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    
+    NSLog(@"webView shouldStartLoadWithRequest");
     NSString *urlString = [request.URL absoluteString];
     if([urlString rangeOfString:@"edit://"].location == NSNotFound)  return YES;
     
@@ -225,6 +238,8 @@ static Class hackishFixClass = Nil;
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    NSLog(@"webViewDidFinishLoad");
     if(self.delegate){
         [self.delegate onWebViewLoaded];
     }
@@ -232,9 +247,20 @@ static Class hackishFixClass = Nil;
     if(_focusEditorWhenLoaded){
         [self focusEditor];
     }
+    
+    
+    //Set up text in webView
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"html"];
+    NSString *htmlParam = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    htmlParam = [self removeQuotesFromHTML:htmlParam];
+    NSString *setEditorContentCommand = [NSString stringWithFormat:@"setEditorHTML(\"%@\")", htmlParam];
+    
+    [_webView stringByEvaluatingJavaScriptFromString:setEditorContentCommand];
+
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"scrollViewDidScroll");
     [_webView.scrollView setContentOffset:CGPointMake(0, scrollView.contentOffset.y)];
 }
 
