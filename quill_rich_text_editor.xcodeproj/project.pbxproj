@@ -13,6 +13,27 @@
 		C6C5CD861ED5F6FB0060D797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C5CD851ED5F6FB0060D797 /* Assets.xcassets */; };
 		C6C5CD891ED5F6FB0060D797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C5CD871ED5F6FB0060D797 /* LaunchScreen.storyboard */; };
 		C6F4FA4B1ED5FE670015E12D /* QuillSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA4A1ED5FE670015E12D /* QuillSamples.swift */; };
+		C6F4FA5E1ED613860015E12D /* ios_note_editor.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA551ED613860015E12D /* ios_note_editor.js */; };
+		C6F4FA5F1ED613860015E12D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA561ED613860015E12D /* index.html */; };
+		C6F4FA611ED613860015E12D /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA581ED613860015E12D /* jquery.min.js */; };
+		C6F4FA621ED613860015E12D /* quill.base.css in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA591ED613860015E12D /* quill.base.css */; };
+		C6F4FA631ED613860015E12D /* quill.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA5A1ED613860015E12D /* quill.js */; };
+		C6F4FA641ED613860015E12D /* quill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA5B1ED613860015E12D /* quill.min.js */; };
+		C6F4FA651ED613860015E12D /* quill.snow.css in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA5C1ED613860015E12D /* quill.snow.css */; };
+		C6F4FA661ED613860015E12D /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA5D1ED613860015E12D /* style.css */; };
+		C6F4FA761ED613DE0015E12D /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA6B1ED613DE0015E12D /* NSString+FontAwesome.m */; };
+		C6F4FA771ED613DE0015E12D /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA6D1ED613DE0015E12D /* UIFont+FontAwesome.m */; };
+		C6F4FA781ED613DE0015E12D /* font-awesome.css in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA6E1ED613DE0015E12D /* font-awesome.css */; };
+		C6F4FA791ED613DE0015E12D /* font-awesome.min.css in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA6F1ED613DE0015E12D /* font-awesome.min.css */; };
+		C6F4FA7A1ED613DE0015E12D /* fontawesome-webfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA701ED613DE0015E12D /* fontawesome-webfont.eot */; };
+		C6F4FA7B1ED613DE0015E12D /* fontawesome-webfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA711ED613DE0015E12D /* fontawesome-webfont.svg */; };
+		C6F4FA7C1ED613DE0015E12D /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA721ED613DE0015E12D /* fontawesome-webfont.ttf */; };
+		C6F4FA7D1ED613DE0015E12D /* fontawesome-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA731ED613DE0015E12D /* fontawesome-webfont.woff */; };
+		C6F4FA7E1ED613DE0015E12D /* fontawesome-webfont.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA741ED613DE0015E12D /* fontawesome-webfont.woff2 */; };
+		C6F4FA7F1ED613DE0015E12D /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = C6F4FA751ED613DE0015E12D /* FontAwesome.otf */; };
+		C6F4FA871ED614180015E12D /* QuillNoteEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA821ED614180015E12D /* QuillNoteEditorViewController.m */; };
+		C6F4FA881ED614180015E12D /* QuillToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA841ED614180015E12D /* QuillToolbarButton.m */; };
+		C6F4FA891ED614180015E12D /* QuillToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F4FA861ED614180015E12D /* QuillToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +45,33 @@
 		C6C5CD881ED5F6FB0060D797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6C5CD8A1ED5F6FB0060D797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F4FA4A1ED5FE670015E12D /* QuillSamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuillSamples.swift; sourceTree = "<group>"; };
+		C6F4FA551ED613860015E12D /* ios_note_editor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ios_note_editor.js; sourceTree = "<group>"; };
+		C6F4FA561ED613860015E12D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C6F4FA581ED613860015E12D /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		C6F4FA591ED613860015E12D /* quill.base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = quill.base.css; sourceTree = "<group>"; };
+		C6F4FA5A1ED613860015E12D /* quill.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = quill.js; sourceTree = "<group>"; };
+		C6F4FA5B1ED613860015E12D /* quill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = quill.min.js; sourceTree = "<group>"; };
+		C6F4FA5C1ED613860015E12D /* quill.snow.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = quill.snow.css; sourceTree = "<group>"; };
+		C6F4FA5D1ED613860015E12D /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		C6F4FA691ED613DD0015E12D /* quill_rich_text_editor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quill_rich_text_editor-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6F4FA6A1ED613DE0015E12D /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		C6F4FA6B1ED613DE0015E12D /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		C6F4FA6C1ED613DE0015E12D /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		C6F4FA6D1ED613DE0015E12D /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		C6F4FA6E1ED613DE0015E12D /* font-awesome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "font-awesome.css"; sourceTree = "<group>"; };
+		C6F4FA6F1ED613DE0015E12D /* font-awesome.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "font-awesome.min.css"; sourceTree = "<group>"; };
+		C6F4FA701ED613DE0015E12D /* fontawesome-webfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.eot"; sourceTree = "<group>"; };
+		C6F4FA711ED613DE0015E12D /* fontawesome-webfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "fontawesome-webfont.svg"; sourceTree = "<group>"; };
+		C6F4FA721ED613DE0015E12D /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		C6F4FA731ED613DE0015E12D /* fontawesome-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.woff"; sourceTree = "<group>"; };
+		C6F4FA741ED613DE0015E12D /* fontawesome-webfont.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.woff2"; sourceTree = "<group>"; };
+		C6F4FA751ED613DE0015E12D /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		C6F4FA811ED614180015E12D /* QuillNoteEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuillNoteEditorViewController.h; sourceTree = "<group>"; };
+		C6F4FA821ED614180015E12D /* QuillNoteEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuillNoteEditorViewController.m; sourceTree = "<group>"; };
+		C6F4FA831ED614180015E12D /* QuillToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuillToolbarButton.h; sourceTree = "<group>"; };
+		C6F4FA841ED614180015E12D /* QuillToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuillToolbarButton.m; sourceTree = "<group>"; };
+		C6F4FA851ED614180015E12D /* QuillToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuillToolbar.h; sourceTree = "<group>"; };
+		C6F4FA861ED614180015E12D /* QuillToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuillToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +107,71 @@
 				C6C5CD7E1ED5F6FB0060D797 /* AppDelegate.swift */,
 				C6C5CD801ED5F6FB0060D797 /* ViewController.swift */,
 				C6F4FA4A1ED5FE670015E12D /* QuillSamples.swift */,
+				C6F4FA4C1ED60A230015E12D /* Quill_Resource_Files */,
+				C6F4FA691ED613DD0015E12D /* quill_rich_text_editor-Bridging-Header.h */,
 				C6C5CD821ED5F6FB0060D797 /* Main.storyboard */,
 				C6C5CD851ED5F6FB0060D797 /* Assets.xcassets */,
 				C6C5CD871ED5F6FB0060D797 /* LaunchScreen.storyboard */,
 				C6C5CD8A1ED5F6FB0060D797 /* Info.plist */,
 			);
 			path = quill_rich_text_editor;
+			sourceTree = "<group>";
+		};
+		C6F4FA4C1ED60A230015E12D /* Quill_Resource_Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4FA801ED614030015E12D /* CustomQuillView */,
+				C6F4FA671ED613B70015E12D /* FontAwesome */,
+				C6F4FA681ED613C30015E12D /* Quill.js */,
+			);
+			name = Quill_Resource_Files;
+			sourceTree = "<group>";
+		};
+		C6F4FA671ED613B70015E12D /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4FA6A1ED613DE0015E12D /* NSString+FontAwesome.h */,
+				C6F4FA6B1ED613DE0015E12D /* NSString+FontAwesome.m */,
+				C6F4FA6C1ED613DE0015E12D /* UIFont+FontAwesome.h */,
+				C6F4FA6D1ED613DE0015E12D /* UIFont+FontAwesome.m */,
+				C6F4FA6E1ED613DE0015E12D /* font-awesome.css */,
+				C6F4FA6F1ED613DE0015E12D /* font-awesome.min.css */,
+				C6F4FA701ED613DE0015E12D /* fontawesome-webfont.eot */,
+				C6F4FA711ED613DE0015E12D /* fontawesome-webfont.svg */,
+				C6F4FA721ED613DE0015E12D /* fontawesome-webfont.ttf */,
+				C6F4FA731ED613DE0015E12D /* fontawesome-webfont.woff */,
+				C6F4FA741ED613DE0015E12D /* fontawesome-webfont.woff2 */,
+				C6F4FA751ED613DE0015E12D /* FontAwesome.otf */,
+			);
+			name = FontAwesome;
+			sourceTree = "<group>";
+		};
+		C6F4FA681ED613C30015E12D /* Quill.js */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4FA551ED613860015E12D /* ios_note_editor.js */,
+				C6F4FA561ED613860015E12D /* index.html */,
+				C6F4FA581ED613860015E12D /* jquery.min.js */,
+				C6F4FA591ED613860015E12D /* quill.base.css */,
+				C6F4FA5A1ED613860015E12D /* quill.js */,
+				C6F4FA5B1ED613860015E12D /* quill.min.js */,
+				C6F4FA5C1ED613860015E12D /* quill.snow.css */,
+				C6F4FA5D1ED613860015E12D /* style.css */,
+			);
+			name = Quill.js;
+			sourceTree = "<group>";
+		};
+		C6F4FA801ED614030015E12D /* CustomQuillView */ = {
+			isa = PBXGroup;
+			children = (
+				C6F4FA811ED614180015E12D /* QuillNoteEditorViewController.h */,
+				C6F4FA821ED614180015E12D /* QuillNoteEditorViewController.m */,
+				C6F4FA831ED614180015E12D /* QuillToolbarButton.h */,
+				C6F4FA841ED614180015E12D /* QuillToolbarButton.m */,
+				C6F4FA851ED614180015E12D /* QuillToolbar.h */,
+				C6F4FA861ED614180015E12D /* QuillToolbar.m */,
+			);
+			name = CustomQuillView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +207,7 @@
 					C6C5CD7A1ED5F6FB0060D797 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = U6BCJ33M36;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,9 +235,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F4FA781ED613DE0015E12D /* font-awesome.css in Resources */,
+				C6F4FA5F1ED613860015E12D /* index.html in Resources */,
+				C6F4FA661ED613860015E12D /* style.css in Resources */,
 				C6C5CD891ED5F6FB0060D797 /* LaunchScreen.storyboard in Resources */,
+				C6F4FA611ED613860015E12D /* jquery.min.js in Resources */,
+				C6F4FA7D1ED613DE0015E12D /* fontawesome-webfont.woff in Resources */,
+				C6F4FA651ED613860015E12D /* quill.snow.css in Resources */,
+				C6F4FA7E1ED613DE0015E12D /* fontawesome-webfont.woff2 in Resources */,
+				C6F4FA7B1ED613DE0015E12D /* fontawesome-webfont.svg in Resources */,
 				C6C5CD861ED5F6FB0060D797 /* Assets.xcassets in Resources */,
+				C6F4FA621ED613860015E12D /* quill.base.css in Resources */,
+				C6F4FA631ED613860015E12D /* quill.js in Resources */,
 				C6C5CD841ED5F6FB0060D797 /* Main.storyboard in Resources */,
+				C6F4FA791ED613DE0015E12D /* font-awesome.min.css in Resources */,
+				C6F4FA7F1ED613DE0015E12D /* FontAwesome.otf in Resources */,
+				C6F4FA7A1ED613DE0015E12D /* fontawesome-webfont.eot in Resources */,
+				C6F4FA7C1ED613DE0015E12D /* fontawesome-webfont.ttf in Resources */,
+				C6F4FA641ED613860015E12D /* quill.min.js in Resources */,
+				C6F4FA5E1ED613860015E12D /* ios_note_editor.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F4FA881ED614180015E12D /* QuillToolbarButton.m in Sources */,
+				C6F4FA761ED613DE0015E12D /* NSString+FontAwesome.m in Sources */,
+				C6F4FA871ED614180015E12D /* QuillNoteEditorViewController.m in Sources */,
+				C6F4FA891ED614180015E12D /* QuillToolbar.m in Sources */,
 				C6F4FA4B1ED5FE670015E12D /* QuillSamples.swift in Sources */,
 				C6C5CD811ED5F6FB0060D797 /* ViewController.swift in Sources */,
+				C6F4FA771ED613DE0015E12D /* UIFont+FontAwesome.m in Sources */,
 				C6C5CD7F1ED5F6FB0060D797 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,11 +396,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U6BCJ33M36;
 				INFOPLIST_FILE = quill_rich_text_editor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshoconnor.quill-rich-text-editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quill_rich_text_editor/quill_rich_text_editor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -280,11 +412,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = U6BCJ33M36;
 				INFOPLIST_FILE = quill_rich_text_editor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshoconnor.quill-rich-text-editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quill_rich_text_editor/quill_rich_text_editor-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

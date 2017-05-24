@@ -10,9 +10,9 @@
 import Foundation
 import UIKit
 
-struct ClickUpConstants {
+struct QuillSamples {
     
-    static let quillSamples = [blankDescription, browserUnsupportedPage, viewTaskNewDesign]
+    static let sampleArray = [blankDescription, browserUnsupportedPage, viewTaskNewDesign]
     
     //#5d6
     static let blankDescription = "{\"ops\":[{\"insert\":\"\\n\"}]}"
