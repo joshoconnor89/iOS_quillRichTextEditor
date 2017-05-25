@@ -94,6 +94,8 @@ static Class hackishFixClass = Nil;
     _webView.keyboardDisplayRequiresUserAction = NO;
     _webView.scalesPageToFit = YES;
     _webView.hidesInputAccessoryView = YES;
+    _webView.opaque = NO;
+    _webView.backgroundColor = [UIColor clearColor];
     [_webView.scrollView setContentInset:UIEdgeInsetsMake(12, 0, 0, 0)];
     //_webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
     _webView.scrollView.delegate = self;
@@ -264,7 +266,7 @@ static Class hackishFixClass = Nil;
     webView.scrollView.minimumZoomScale = sfactor;
     webView.scrollView.maximumZoomScale = sfactor;
     webView.scrollView.zoomScale = sfactor;
-    
+
 
 }
 

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "quill_rich_text_editor/QuillNoteEditorViewController.m"
-            timestampString = "517361853.887607"
+            timestampString = "517365044.912974"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-setTextFormat:andApply:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "quill_rich_text_editor/QuillNoteEditorViewController.m"
-            timestampString = "517361853.887607"
+            timestampString = "517365044.912974"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "-setUpTextInWebView:"
             landmarkType = "7">
          </BreakpointContent>
