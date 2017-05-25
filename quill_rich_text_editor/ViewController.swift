@@ -13,11 +13,12 @@ class ViewController: UIViewController {
     var containerView: UIView?
     var quillToolbar: QuillToolbar?
     var noteEditorController: QuillNoteEditorViewController?
+    var currentSampleIndex = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        containerView = UIView(frame: CGRect(x: CGFloat(0), y: CGFloat(60), width: CGFloat(view.frame.size.width), height: CGFloat(view.frame.size.height - 60)))
+        containerView = UIView(frame: CGRect(x: CGFloat(0), y: CGFloat(60), width: CGFloat(view.frame.size.width), height: CGFloat(view.frame.size.height - 110)))
         view.addSubview(containerView!)
         
         noteEditorController = QuillNoteEditorViewController(nibName: nil, bundle: nil)
@@ -30,7 +31,6 @@ class ViewController: UIViewController {
         quillToolbar = QuillToolbar(frame: CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(view.frame.size.width), height: CGFloat(60)))
         quillToolbar?.editorViewController = noteEditorController
         view.addSubview(quillToolbar!)
-
         
     }
     
@@ -54,6 +54,20 @@ class ViewController: UIViewController {
         return stringToReturn
     }
 
+    
+    @IBAction func newExampleButtonPressed(_ sender: Any) {
+        let count = QuillSamples.sampleArray.count
+            
+        if currentSampleIndex < count {
+            noteEditorController?.setUpTextInWebView(QuillSamples.sampleArray[currentSampleIndex])
+        }else{
+            noteEditorController?.setUpTextInWebView(QuillSamples.sampleArray[0])
+            currentSampleIndex = 0
+        }
+        currentSampleIndex = currentSampleIndex + 1
+        
+    }
+    
 
 }
 
@@ -66,7 +80,7 @@ extension ViewController: QuillNoteEditorDelegate {
     }
     
     func onWebViewLoaded() {
-        noteEditorController?.setUpTextInWebView(QuillSamples.viewTaskNewDesign)
+        noteEditorController?.setUpTextInWebView(QuillSamples.automaticallyGiveTeamsNewName)
     }
 
 }

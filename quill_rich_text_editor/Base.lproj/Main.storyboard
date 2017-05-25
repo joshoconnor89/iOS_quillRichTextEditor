@@ -20,7 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dc-nB-t17">
+                                <rect key="frame" x="108" y="612" width="158" height="45"/>
+                                <color key="backgroundColor" red="0.53725490200000003" green="0.41176470590000003" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IOe-0n-QnC"/>
+                                    <constraint firstAttribute="width" constant="158" id="LtE-W7-W9p"/>
+                                </constraints>
+                                <state key="normal" title="New Example">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newExampleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tb-PM-MaT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5dc-nB-t17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eeb-mj-8V6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5dc-nB-t17" secondAttribute="bottom" constant="10" id="rR0-bP-AcY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
